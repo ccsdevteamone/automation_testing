@@ -1,0 +1,16 @@
+html, body {
+	margin-top: 35px;
+}
+.ccs-logo{
+	width:45px;
+	margin-top:-5px;
+}
+.ccs-navbar-text{
+	margin-left:-10px;
+}
+.navbar-ccs-form-group{
+	margin-top: 2px;
+}
+.ccs-input {
+	height: 30px;
+}

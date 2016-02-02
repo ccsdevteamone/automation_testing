@@ -1,0 +1,10 @@
+$(document).ready(function(){
+	$('[has-tooltip="yes"]').tooltip();
+	$('html').on("click",function(){
+		$('[has-tooltip="yes"]').tooltip();
+	});
+	$('[has-tooltip="yes"]').on("click",function(){
+		$(this).tooltip('hide');
+		$(this).tooltip('destroy');
+	});
+});
