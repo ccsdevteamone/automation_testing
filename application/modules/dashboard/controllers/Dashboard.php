@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Frontpage extends MX_Controller {
+class Dashboard extends MX_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,9 @@ class Frontpage extends MX_Controller {
 	 */
 	public function index()
 	{
-		$data['title'] = "My Title";
-		$this->load->view('front_page', $data);
+		$data = array(
+			"title" => "Dashboard"
+		);
+		$this->load->view('dashboard', $data);
 	}
 }

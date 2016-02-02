@@ -1,6 +1,3 @@
-<?php
-include APPPATH."views/templates/header.php";
-?>
 <!-- navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
@@ -14,43 +11,40 @@ include APPPATH."views/templates/header.php";
 			<a class="navbar-brand" href=".">
 				<img alt="Brand" src="<?php echo base_url('assets/theme_one/img/logo.png'); ?>" class="ccs-logo">
 			</a>
-			<p class="navbar-text ccs-navbar-text">
-				<!--<strong class="text-primary">Automation Testing System</strong>-->
-			</p>
 		</div>
 		<div class="collapse navbar-collapse" id="ccs-navbar-collapse">
 
 			<ul class="nav navbar-nav">
 				<li>
-					<a href="#">
+					<a href="<?php echo base_url("dashboard");?>">
 						<strong class="text-primary">
 							<i class="fa fa-dashboard"></i> Dashboard
 						</strong>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="<?php echo base_url("projects");?>">
 						<strong class="text-primary">
 							<i class="fa fa-sitemap"></i> Projects
 						</strong>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="<?php echo base_url("tests");?>">
 						<strong class="text-primary">
 							<i class="fa fa-paperclip"></i> Tests
 						</strong>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="<?php echo base_url("issues");?>">
 						<strong class="text-primary">
 							<i class="fa fa-newspaper-o"></i> Issues
 						</strong>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="<?php echo base_url("collaborators");?>">
 						<strong class="text-primary">
 							<i class="fa fa-users"></i> Collaborators
 						</strong>
@@ -64,11 +58,11 @@ include APPPATH."views/templates/header.php";
 					<i class="fa fa-plus text-primary"></i>
 					<span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">New Project</a></li>
-						<li><a href="#">New Test</a></li>
+						<li><a href="<?php echo base_url("projects/add");?>">New Project</a></li>
+						<li><a href="<?php echo base_url("tests/add");?>">New Test</a></li>
 						<li role="separator" class="divider"></li>
-						<li><a href="#">New Issue</a></li>
-						<li><a href="#">New Collaborator</a></li>
+						<li><a href="<?php echo base_url("issues/add");?>">New Issue</a></li>
+						<li><a href="<?php echo base_url("collaborators/add");?>">New Collaborator</a></li>
 					</ul>
 				</li>
 				<li class="dropdown" has-tooltip="yes" data-placement="bottom" title="View profile...">
@@ -81,7 +75,7 @@ include APPPATH."views/templates/header.php";
 							<strong>ccsronron</strong>
 						</li>
 						<li role="separator" class="divider"></li>
-						<li><a href="#">Signout</a></li>
+						<li><a href="<?php echo base_url("logout"); ?>">Signout</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -89,27 +83,3 @@ include APPPATH."views/templates/header.php";
 	</div>
 </nav>
 <!-- navbar -->
-
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<span class="fa fa-user"></span> User
-					</div>
-				</div>
-			</div>
-			<div class="col-md-8">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						Content
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-<?php
-include APPPATH."views/templates/footer.php";
-?>
