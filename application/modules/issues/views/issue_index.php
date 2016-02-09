@@ -1,5 +1,5 @@
 <?php include APPPATH."views/templates/header.php";?>
-<?php include APPPATH."views/templates/navbar.php";?>
+<?php  $navbar = (isset($_SESSION['auth'])) ? include APPPATH."views/templates/navbar_in.php" : header("location:".base_url("user"));?>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">

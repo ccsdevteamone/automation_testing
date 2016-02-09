@@ -5,8 +5,10 @@ html, body {
 	width:45px;
 	margin-top:-5px;
 }
-.ccs-navbar-text{
-	margin-left:-10px;
+.ccs-navbar-text {
+    margin-left: -5px;
+    margin-top: 16px;
+    font-size: 18px;
 }
 .navbar-ccs-form-group{
 	margin-top: 2px;
